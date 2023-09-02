@@ -5,7 +5,7 @@ do
 	for i in $(seq 3)
 	do
 		echo "Running test case $i:"
-		cat input$i.txt | gcc $var > user_output$i.txt 
+		cat input$i.txt | python3 $var > user_output$i.txt 
 		echo "User output: " 
 		cat user_output$i.txt 
 		echo "Expected output: " 
